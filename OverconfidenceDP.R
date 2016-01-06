@@ -46,7 +46,7 @@ forPlot$ideal = rep("ideal", dim(forPlot)[1])
 
 # Plot the accuracy line
 
-png(filename = "overconfidence_plot.png", width = 480, height = 800)
+png(filename = "overconfidence_plot.png", width = 1080, height = 1920)
 overconfidence_plot <- ggplot(forPlot, aes(x = p, y = validPercentage, color = accuracy)) +
         geom_line(size=2) + 
         scale_y_continuous(limits = c(0, 1)) +
